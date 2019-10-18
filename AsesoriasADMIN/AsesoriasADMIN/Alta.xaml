@@ -1,0 +1,25 @@
+﻿<Window x:Class="AsesoriasADMIN.Alta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsesoriasADMIN"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Alta" Height="368" Width="450" FontFamily="Arial Rounded MT Bold" FontSize="14">
+    <Grid>
+        <Label x:Name="lblCU" Content="Clave Única" HorizontalAlignment="Left" Margin="35,49,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblNombre" Content="Nombre" HorizontalAlignment="Left" Margin="35,90,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblCorreo" Content="Correo" HorizontalAlignment="Left" Margin="35,131,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblTel" Content="Teléfono" HorizontalAlignment="Left" Margin="35,172,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblPassword" Content="Contraseña" HorizontalAlignment="Left" Margin="35,217,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="txtCU" HorizontalAlignment="Left" Height="23" Margin="181,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="181,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="181,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="181,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="181,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="321,279,0,0" VerticalAlignment="Top" Width="90" Height="32"/>
+        <Button x:Name="btnRegresar" Content="Regresar" Grid.Column="1" HorizontalAlignment="Left" Margin="36,279,0,0" VerticalAlignment="Top" Width="89" Height="32"/>
+        <TextBox x:Name="txtResp" HorizontalAlignment="Left" Height="32" Margin="177,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124"/>
+    </Grid>
+</Window>
