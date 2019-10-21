@@ -15,5 +15,6 @@
         <Button x:Name="btnBusca" Content="BUSCA" HorizontalAlignment="Left" Margin="407,50,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
         <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="29" Margin="93,196,0,-13" VerticalAlignment="Top" Width="414"/>
         <DataGrid x:Name="dgMuestra" HorizontalAlignment="Left" Height="120" Margin="93,243,0,-151" VerticalAlignment="Top" Width="414"/>
+        <Label Content="Hola" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,62,0,0"/>
     </Grid>
 </Window>
