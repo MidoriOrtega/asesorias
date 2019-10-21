@@ -24,5 +24,16 @@ namespace AsesoriasADMIN
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_MouseEnter ( object sender, RoutedEventArgs e)
+        {
+            Button btnEntrar = sender as Button;
+            btnEntrar.Background = new SolidColorBrush(Colors.Green);
+        }
     }
 }
