@@ -20,7 +20,7 @@ namespace AsesoriasADMIN
       }
       catch (Exception e)
       {
-        MessageBox.Show("no se pudo conectar y el error es: " + e);
+        MessageBox.Show("ERROR: No se pudo conectar y el error es: " + e);
       }
       return cnn;
     }
@@ -39,18 +39,18 @@ namespace AsesoriasADMIN
         if (drd.Read())
         {
           if (drd.GetString(0).Equals(contra))
-            resp = "contraseña correcta";
+            resp = "Contraseña correcta";
           else
-            resp = "contraseña incorrecta";
+            resp = "Contraseña incorrecta";
         }
         else
-          resp = "usuario incorrecto";
+          resp = "Usuario incorrecto";
         con.Close();
         drd.Close();
       }
       catch (Exception e)
       {
-        resp = "error " + e;
+        resp = "ERROR: " + e;
       }
 
       return resp;

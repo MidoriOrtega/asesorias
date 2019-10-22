@@ -22,9 +22,11 @@
         <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="70,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="0.575,2.913"/>
         <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="70,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="70,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button x:Name="btnAgregar" Content="AGREGAR" HorizontalAlignment="Left" Margin="38,382,0,0" VerticalAlignment="Top" Width="94" Height="32" FontSize="12" RenderTransformOrigin="0.489,1.625" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnRegresar" Content="REGRESAR" HorizontalAlignment="Left" Margin="38,330,0,0" VerticalAlignment="Top" Width="94" Height="32" Grid.ColumnSpan="2" FontSize="12"/>
-        <TextBox x:Name="txtResp" HorizontalAlignment="Left" Height="32" Margin="70,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="btnAgregar" Content="AGREGAR" HorizontalAlignment="Left" Margin="38,330,0,0" VerticalAlignment="Top" Width="94" Height="32" FontSize="12" RenderTransformOrigin="0.489,1.625" Grid.ColumnSpan="2" Click="btnAgregar_Click"/>
+        <Button x:Name="btnRegresar" Content="REGRESAR" HorizontalAlignment="Left" Margin="38,382,0,0" VerticalAlignment="Top" Width="94" Height="32" Grid.ColumnSpan="2" FontSize="12" Click="btnRegresar_Click"/>
+        <Label x:Name="lblMensaje" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="70,359,0,0" VerticalAlignment="Top" Width="120"/>
+
+
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="329,42,-4,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="14" Width="37" RenderTransformOrigin="0.696,0.455" FontSize="10"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="230,80,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="22" Width="56" FontSize="20" Opacity="0.5"/>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="286,3,-13,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="34" Width="89" FontSize="30"/>

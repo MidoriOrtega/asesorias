@@ -23,5 +23,25 @@ namespace AsesoriasADMIN
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            int res;
+            Usuario u;
+            u = new Usuario(Int16.Parse(txtCU.Text), txtNombre.Text, txtCorreo.Text, txtTel.Text, txtPassword.Text);
+            res = u.alta(u);
+            if (res > 0)
+                lblMensaje.Content = "Se dio de alta";
+            else
+                lblMensaje.Content = "ERROR: No se dio de alta";
+        }
+
+        private void btnRegresar_Click(object sender, RoutedEventArgs e)
+        {
+            Admin w = new Admin();
+            w.Show();
+            this.Close();
+        }
+        
     }
 }

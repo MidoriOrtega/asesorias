@@ -6,30 +6,34 @@
         xmlns:local="clr-namespace:AsesoriasADMIN"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Administrador" Height="470.929" Width="550.965">
+        Title="Administrador" Height="480" Width="550">
     <Grid Background="#FFCB7373" Margin="0,0,0,1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="110*"/>
             <ColumnDefinition Width="55*"/>
             <ColumnDefinition Width="14*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="lblCU" Content=" Clave Única:" HorizontalAlignment="Left" Margin="57,64,0,0" VerticalAlignment="Top" Height="31" Width="139" FontSize="20" FontFamily="Sitka Heading"/>
-        <TextBox x:Name="txtCU" HorizontalAlignment="Left" Height="31" Margin="47,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <Button x:Name="btnAlta" Content="ALTA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="280,81,0,0" Height="50" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnBaja" Content="BAJA" HorizontalAlignment="Left" Margin="280,159,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.ColumnSpan="2"/>
-        <Button x:Name="btnBusca" Content="BUSCA" HorizontalAlignment="Left" Margin="67,81,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="1"/>
-        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="29" Margin="77,30,0,0" VerticalAlignment="Top" Width="414" Grid.ColumnSpan="2"/>
 
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFD85353"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="52,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFDA4444"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFDA3333"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="52,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFD85353"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="52,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFDA4444"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="105,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="105,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFD85353"/>
-        <TextBox HorizontalAlignment="Left" Height="46" Margin="158,393,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
-        <DataGrid x:Name="dgMuestra" HorizontalAlignment="Left" Margin="105,235,0,92" Width="414" Grid.ColumnSpan="3"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFD85353"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="52,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFDA4444"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="-1,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFDA3333"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="52,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFD85353"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="52,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFDA4444"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="105,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="105,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFD85353"/>
+        <TextBox HorizontalAlignment="Left" Height="46" Margin="158,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" Background="#FFCF6868"/>
+
+        <Label x:Name="lblCU" Content=" Clave Única:" HorizontalAlignment="Left" Margin="47,57,0,0" VerticalAlignment="Top" Height="31" Width="139" FontSize="20" FontFamily="Sitka Heading"/>
+        <TextBox x:Name="txtCU" HorizontalAlignment="Left" Height="31" Margin="47,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
+        <Button x:Name="btnAlta" Content="ALTA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="280,51,0,0" Height="50" Grid.ColumnSpan="2" Click="btnAlta_Click"/>
+        <Button x:Name="btnBaja" Content="BAJA" HorizontalAlignment="Left" Margin="280,133,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.ColumnSpan="2" Click="btnBaja_Click"/>
+        <Button x:Name="btnBusca" Content="BUSCA" HorizontalAlignment="Left" Margin="67,87,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.Column="1" Click="btnBusca_Click"/>
+        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="29" Margin="47,209,0,0" VerticalAlignment="Top" Width="414" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="dgMuestra" HorizontalAlignment="Left" Margin="86,250,0,70" Width="414" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnSalir" Content="SALIR" HorizontalAlignment="Left" Height="23" Margin="92,401,0,0" VerticalAlignment="Top" Width="75" Click="btSalir_Click" Grid.Column="1"/>
+
+
     </Grid>
 </Window>

@@ -28,7 +28,7 @@ namespace AsesoriasADMIN
         private void Button_Click(object sender, RoutedEventArgs e)
         {
           String resp = Conexion.comprobarPwd(txtUsuario.Text, txtPassword.Password);
-          if (resp.Equals("contraseña correcta"))
+          if (resp.Equals("Contraseña correcta"))
           {
             Admin vAdmin = new Admin();
             vAdmin.Show();

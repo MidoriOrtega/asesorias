@@ -23,5 +23,37 @@ namespace AsesoriasADMIN
         {
             InitializeComponent();
         }
+
+        private void btnAlta_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Alta w = new Alta();
+            w.Show();
+        }
+
+        private void btnBaja_Click(object sender, RoutedEventArgs e)
+        {
+            int res;
+            Usuario u;
+            u = new Usuario(Int16.Parse(txtCU.Text));
+            res = u.baja(u);
+            if (res > 0)
+                lblMensaje.Content = "Se dio de baja";
+            else
+                lblMensaje.Content = "ERROR: No se dio de baja";
+        }
+
+        private void btnBusca_Click(object sender, RoutedEventArgs e)
+        {
+            Usuario u = new Usuario(txtCU.Text);
+            List<Usuario> l = new List<Usuario>();
+            l = u.busca(u);
+            dgMuestra.ItemsSource = l;
+        }
+
+        private void btSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
