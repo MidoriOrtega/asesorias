@@ -6,26 +6,33 @@
         xmlns:local="clr-namespace:AsesoriasADMIN"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Alta" Height="450" Width="450" FontFamily="Arial Rounded MT Bold" FontSize="14">
-    <Grid Background="#FF699954" Margin="0,0,0,-215">
+        Title="Alta" Height="439.856" Width="450" FontFamily="Arial Rounded MT Bold" FontSize="14">
+    <Grid Background="#FF699954" Margin="0,0,0,-31">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="181*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="lblCU" Content="Clave Única:" HorizontalAlignment="Left" Margin="70,299,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="82"/>
-        <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="70,338,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="61"/>
-        <Label x:Name="lblCorreo" Content="Correo:" HorizontalAlignment="Left" Margin="70,380,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="54"/>
-        <Label x:Name="lblTel" Content="Teléfono:" HorizontalAlignment="Left" Margin="70,422,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="64"/>
-        <Label x:Name="lblPassword" Content="Contraseña:" HorizontalAlignment="Left" Margin="70,468,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="80" RenderTransformOrigin="0.488,0.286"/>
-        <TextBox x:Name="txtCU" HorizontalAlignment="Left" Height="23" Margin="87,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="87,343,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="87,385,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="0.575,2.913"/>
-        <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="87,427,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="87,468,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Button x:Name="btnAgregar" Content="AGREGAR" HorizontalAlignment="Left" Margin="205,560,0,0" VerticalAlignment="Top" Width="94" Height="32" Grid.Column="1" FontSize="12" RenderTransformOrigin="0.489,1.625"/>
-        <Button x:Name="btnRegresar" Content="REGRESAR" HorizontalAlignment="Left" Margin="56,560,0,0" VerticalAlignment="Top" Width="94" Height="32" Grid.ColumnSpan="2" FontSize="12"/>
-        <TextBox x:Name="txtResp" HorizontalAlignment="Left" Height="23
-                 " Margin="87,512,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-        <Image HorizontalAlignment="Right" Height="258" VerticalAlignment="Top" Width="839" Source="imagen/plazaRoja.png" Grid.ColumnSpan="0.5" Margin="-407,10,10,0" Grid.Column="0"/>
+        <Label x:Name="lblCU" Content="Clave Única:" HorizontalAlignment="Left" Margin="56,67,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="82"/>
+        <Label x:Name="lblNombre" Content="Nombre:" HorizontalAlignment="Left" Margin="56,121,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="61"/>
+        <Label x:Name="lblCorreo" Content="Correo:" HorizontalAlignment="Left" Margin="56,175,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="54"/>
+        <Label x:Name="lblTel" Content="Teléfono:" HorizontalAlignment="Left" Margin="56,228,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="64"/>
+        <Label x:Name="lblPassword" Content="Contraseña:" HorizontalAlignment="Left" Margin="56,283,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Sitka Heading" Height="28" Width="80" RenderTransformOrigin="0.488,0.286"/>
+        <TextBox x:Name="txtCU" HorizontalAlignment="Left" Height="23" Margin="87,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="87,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtCorreo" HorizontalAlignment="Left" Height="23" Margin="87,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" RenderTransformOrigin="0.575,2.913"/>
+        <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="87,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="87,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Button x:Name="btnAgregar" Content="AGREGAR" HorizontalAlignment="Left" Margin="235,330,0,0" VerticalAlignment="Top" Width="94" Height="32" Grid.Column="1" FontSize="12" RenderTransformOrigin="0.489,1.625"/>
+        <Button x:Name="btnRegresar" Content="REGRESAR" HorizontalAlignment="Left" Margin="44,330,0,0" VerticalAlignment="Top" Width="94" Height="32" Grid.ColumnSpan="2" FontSize="12"/>
+        <TextBox x:Name="txtResp" HorizontalAlignment="Left" Height="32" Margin="87,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Image HorizontalAlignment="Right" Height="219" VerticalAlignment="Top" Width="352" Source="imagen/plazaRoja.png" Grid.ColumnSpan="0.5" Margin="-646,121,374,0" Grid.Column="0"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="316,65,-10,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="22" Width="56"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="254,130,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="22" Width="56" FontSize="20" Opacity="0.5"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="263,0,-10,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="52" Width="109" FontSize="36"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="243,87,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="52" Width="109" FontSize="36"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="243,164,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="52" Width="109" FontSize="36"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="273,254,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="22" Width="56"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="235,221,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="22" Width="56" FontSize="20" Opacity="0.5"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="212,62,0,0" TextWrapping="Wrap" Text="ITAM" VerticalAlignment="Top" Height="22" Width="56" FontSize="20" Opacity="0.5"/>
     </Grid>
 </Window>
