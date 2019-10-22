@@ -1,4 +1,4 @@
-create table adminnistrador
+create table administrador
 	(claveU int not null primary key,
 	usuario varchar(20),
 	contra varchar(50))
