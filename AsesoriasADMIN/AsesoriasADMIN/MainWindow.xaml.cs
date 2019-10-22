@@ -27,7 +27,18 @@ namespace AsesoriasADMIN
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+          String resp = Conexion.comprobarPwd(txtUsuario.Text, txtPassword.Password);
+          if (resp.Equals("contraseña correcta"))
+          {
+            Admin vAdmin = new Admin();
+            vAdmin.Show();
+            this.Close();
+          }
+          else
+          {
+            lblMensaje.Foreground = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+            lblMensaje.Content = resp;
+          }
         }
 
         private void btnEntrar_MouseEnter ( object sender, RoutedEventArgs e)

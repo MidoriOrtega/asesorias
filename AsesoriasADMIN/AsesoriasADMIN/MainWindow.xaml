@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:AsesoriasADMIN"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Asesorías ITAM" Height="200" Width="275" >
-    <Grid Background="#FF92998F">
+        Title="Asesorías ITAM" Height="200" Width="291.471" >
+    <Grid Background="#FF92998F" HorizontalAlignment="Left" Width="282" Margin="0,0,-15,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="173*"/>
             <ColumnDefinition Width="94*"/>
@@ -15,9 +15,10 @@
         <Label x:Name="lblUsuario" Content="Usuario :" HorizontalAlignment="Left" Margin="43,20,0,0" VerticalAlignment="Top" FontFamily="Sitka Heading"/>
         <Label x:Name="lblPassword" Content="Contraseña :" HorizontalAlignment="Left" Margin="25,58,0,0" VerticalAlignment="Top" FontFamily="Sitka Heading"/>
         <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="23" Margin="129,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="129,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
         <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="155,111,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FFF7F3F3" Grid.ColumnSpan="2" />
         <Image Grid.Column="0" HorizontalAlignment="Left" Height="60" Margin="30,95,0,0" VerticalAlignment="Top" Width="68" Source="imagen/colmillo.png"/>
+        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Margin="118,83,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="139" Height="23"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="129,58,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="120" Height="25"/>
 
 
     </Grid>

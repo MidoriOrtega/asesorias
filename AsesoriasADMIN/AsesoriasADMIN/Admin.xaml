@@ -6,15 +6,20 @@
         xmlns:local="clr-namespace:AsesoriasADMIN"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="Administrador" Height="459" Width="545">
-    <Grid Background="#FFCB7373" Margin="0,0,0,-52">
+        Title="Administrador" Height="470.929" Width="550.965">
+    <Grid Background="#FFCB7373" Margin="0,0,0,8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="14*"/>
+        </Grid.ColumnDefinitions>
         <Label x:Name="lblCU" Content=" Clave Única:" HorizontalAlignment="Left" Margin="57,173,0,0" VerticalAlignment="Top" Height="31" Width="139" FontSize="20" FontFamily="Sitka Heading"/>
         <TextBox x:Name="txtCU" HorizontalAlignment="Left" Height="31" Margin="57,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164"/>
-        <Button x:Name="btnAlta" Content="ALTA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="264,173,0,0" Height="50"/>
-        <Button x:Name="btnBaja" Content="BAJA" HorizontalAlignment="Left" Margin="264,240,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
-        <Button x:Name="btnBusca" Content="BUSCA" HorizontalAlignment="Left" Margin="397,173,0,0" VerticalAlignment="Top" Width="100" Height="50"/>
-        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="29" Margin="83,175,0,0" VerticalAlignment="Top" Width="414"/>
-        <DataGrid x:Name="dgMuestra" HorizontalAlignment="Left" Height="120" Margin="69,317,0,0" VerticalAlignment="Top" Width="414"/>
-        <Image HorizontalAlignment="Right" Height="152" VerticalAlignment="Top" Width="537" Source="imagen/vestibulo.png" Grid.ColumnSpan="0.5" Margin="0,3,0,0" Grid.Column="0"/>
+        <Button x:Name="btnAlta" Content="ALTA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="264,173,0,0" Height="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnBaja" Content="BAJA" HorizontalAlignment="Left" Margin="264,240,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnBusca" Content="BUSCA" HorizontalAlignment="Left" Margin="66.976,173,0,0" VerticalAlignment="Top" Width="100" Height="50" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label x:Name="lblMensaje" Content="" HorizontalAlignment="Left" Height="29" Margin="83,175,0,0" VerticalAlignment="Top" Width="414" Grid.ColumnSpan="3"/>
+        <DataGrid x:Name="dgMuestra" HorizontalAlignment="Left" Margin="69,317,0,10" Width="414" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Right" Height="152" VerticalAlignment="Top" Width="537" Source="imagen/vestibulo.png" Margin="0,3,0,0" Grid.Column="0" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>
