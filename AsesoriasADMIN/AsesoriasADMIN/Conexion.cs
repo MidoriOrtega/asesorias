@@ -15,7 +15,7 @@ namespace AsesoriasADMIN
       SqlConnection cnn = null;
       try
       {
-        cnn = new SqlConnection("Data Source=112SALAS24;Initial Catalog=administradores;User ID=sa;Password=sqladmin");
+        cnn = new SqlConnection("Data Source=LocalHost;Initial Catalog=Administradores;User ID=sa;Password=sqladmin");
         cnn.Open();
       }
       catch (Exception e)
@@ -24,6 +24,22 @@ namespace AsesoriasADMIN
       }
       return cnn;
     }
+
+    public static SqlConnection conectarAsesorias()
+    {
+      SqlConnection cnn = null;
+      try
+      {
+        cnn = new SqlConnection("Data Source=LocalHost;Initial Catalog=SistemaAsesorias;User ID=sa;Password=sqladmin");
+        cnn.Open();
+      }
+      catch (Exception e)
+      {
+        MessageBox.Show("ERROR: No se pudo conectar y el error es: " + e);
+      }
+      return cnn;
+    }
+
 
     public static String comprobarPwd(String usuario, String contra)
     {
@@ -34,7 +50,7 @@ namespace AsesoriasADMIN
       try
       {
         con = Conexion.conectarAdmin();
-        cmd = new SqlCommand(String.Format("select contraseña from administrador where usuario = '{0}'", usuario), con);
+        cmd = new SqlCommand(String.Format("select contra from administrador where usuario = '{0}'", usuario), con);
         drd = cmd.ExecuteReader();
         if (drd.Read())
         {

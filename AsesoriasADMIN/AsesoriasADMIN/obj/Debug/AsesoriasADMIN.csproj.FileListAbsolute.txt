@@ -45,3 +45,13 @@ C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\De
 C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN_MarkupCompile.lref
 C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN.exe
 C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN.pdb
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\bin\Debug\AsesoriasADMIN.exe.config
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\bin\Debug\AsesoriasADMIN.exe
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\bin\Debug\AsesoriasADMIN.pdb
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\Admin.baml
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\Alta.baml
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\MainWindow.baml
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN.g.resources
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN.Properties.Resources.resources
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN.csproj.GenerateResource.cache
+C:\Users\sa\Desktop\Proyecto\hola\asesorias\AsesoriasADMIN\AsesoriasADMIN\obj\Debug\AsesoriasADMIN.csproj.CoreCompileInputs.cache

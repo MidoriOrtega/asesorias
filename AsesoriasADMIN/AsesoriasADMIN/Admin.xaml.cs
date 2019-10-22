@@ -36,7 +36,7 @@ namespace AsesoriasADMIN
             int res;
             Usuario u;
             u = new Usuario(Int16.Parse(txtCU.Text));
-            res = u.baja(u);
+            res = Usuario.baja(u);
             if (res > 0)
                 lblMensaje.Content = "Se dio de baja";
             else
@@ -45,10 +45,7 @@ namespace AsesoriasADMIN
 
         private void btnBusca_Click(object sender, RoutedEventArgs e)
         {
-            Usuario u = new Usuario(txtCU.Text);
-            List<Usuario> l = new List<Usuario>();
-            l = u.busca(u);
-            dgMuestra.ItemsSource = l;
+            dgMuestra.ItemsSource = Usuario.busca(txtCU.Text);
         }
 
         private void btSalir_Click(object sender, RoutedEventArgs e)
