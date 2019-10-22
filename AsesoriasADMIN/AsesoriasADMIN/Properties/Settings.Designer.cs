@@ -33,5 +33,27 @@ namespace AsesoriasADMIN.Properties {
                 return ((string)(this["administradoresConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LocalHost;Initial Catalog=Administradores;User ID=sa;Password=sqladmi" +
+            "n")]
+        public string AdministradoresConnectionString1 {
+            get {
+                return ((string)(this["AdministradoresConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LocalHost;Initial Catalog=SistemaAsesorias;User ID=sa;Password=sqladm" +
+            "in")]
+        public string SistemaAsesoriasConnectionString {
+            get {
+                return ((string)(this["SistemaAsesoriasConnectionString"]));
+            }
+        }
     }
 }

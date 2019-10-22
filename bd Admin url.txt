@@ -1,0 +1,1 @@
+Data Source=LocalHost;Initial Catalog=Administradores;User ID=sa;Password=sqladmin

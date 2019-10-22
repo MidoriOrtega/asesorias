@@ -20,9 +20,9 @@ namespace AsesoriasADMIN {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("administradoresDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("AdministradoresDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class administradoresDataSet : global::System.Data.DataSet {
+    public partial class AdministradoresDataSet : global::System.Data.DataSet {
         
         private administradorDataTable tableadministrador;
         
@@ -30,7 +30,7 @@ namespace AsesoriasADMIN {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public administradoresDataSet() {
+        public AdministradoresDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace AsesoriasADMIN {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected administradoresDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected AdministradoresDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace AsesoriasADMIN {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            administradoresDataSet cln = ((administradoresDataSet)(base.Clone()));
+            AdministradoresDataSet cln = ((AdministradoresDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace AsesoriasADMIN {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "administradoresDataSet";
+            this.DataSetName = "AdministradoresDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/administradoresDataSet.xsd";
+            this.Namespace = "http://tempuri.org/AdministradoresDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableadministrador = new administradorDataTable();
@@ -225,7 +225,7 @@ namespace AsesoriasADMIN {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            administradoresDataSet ds = new administradoresDataSet();
+            AdministradoresDataSet ds = new AdministradoresDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -279,11 +279,11 @@ namespace AsesoriasADMIN {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class administradorDataTable : global::System.Data.TypedTableBase<administradorRow> {
             
-            private global::System.Data.DataColumn columncUnica;
+            private global::System.Data.DataColumn columnclaveU;
             
             private global::System.Data.DataColumn columnusuario;
             
-            private global::System.Data.DataColumn columncontraseña;
+            private global::System.Data.DataColumn columncontra;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -320,9 +320,9 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cUnicaColumn {
+            public global::System.Data.DataColumn claveUColumn {
                 get {
-                    return this.columncUnica;
+                    return this.columnclaveU;
                 }
             }
             
@@ -336,9 +336,9 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn contraseñaColumn {
+            public global::System.Data.DataColumn contraColumn {
                 get {
-                    return this.columncontraseña;
+                    return this.columncontra;
                 }
             }
             
@@ -379,12 +379,12 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public administradorRow AddadministradorRow(int cUnica, string usuario, string contraseña) {
+            public administradorRow AddadministradorRow(int claveU, string usuario, string contra) {
                 administradorRow rowadministradorRow = ((administradorRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        cUnica,
+                        claveU,
                         usuario,
-                        contraseña};
+                        contra};
                 rowadministradorRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowadministradorRow);
                 return rowadministradorRow;
@@ -392,9 +392,9 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public administradorRow FindBycUnica(int cUnica) {
+            public administradorRow FindByclaveU(int claveU) {
                 return ((administradorRow)(this.Rows.Find(new object[] {
-                            cUnica})));
+                            claveU})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -414,26 +414,26 @@ namespace AsesoriasADMIN {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columncUnica = base.Columns["cUnica"];
+                this.columnclaveU = base.Columns["claveU"];
                 this.columnusuario = base.Columns["usuario"];
-                this.columncontraseña = base.Columns["contraseña"];
+                this.columncontra = base.Columns["contra"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columncUnica = new global::System.Data.DataColumn("cUnica", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncUnica);
+                this.columnclaveU = new global::System.Data.DataColumn("claveU", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnclaveU);
                 this.columnusuario = new global::System.Data.DataColumn("usuario", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnusuario);
-                this.columncontraseña = new global::System.Data.DataColumn("contraseña", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncontraseña);
+                this.columncontra = new global::System.Data.DataColumn("contra", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontra);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columncUnica}, true));
-                this.columncUnica.AllowDBNull = false;
-                this.columncUnica.Unique = true;
+                                this.columnclaveU}, true));
+                this.columnclaveU.AllowDBNull = false;
+                this.columnclaveU.Unique = true;
                 this.columnusuario.MaxLength = 20;
-                this.columncontraseña.MaxLength = 50;
+                this.columncontra.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -501,7 +501,7 @@ namespace AsesoriasADMIN {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                administradoresDataSet ds = new administradoresDataSet();
+                AdministradoresDataSet ds = new AdministradoresDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -576,12 +576,12 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int cUnica {
+            public int claveU {
                 get {
-                    return ((int)(this[this.tableadministrador.cUnicaColumn]));
+                    return ((int)(this[this.tableadministrador.claveUColumn]));
                 }
                 set {
-                    this[this.tableadministrador.cUnicaColumn] = value;
+                    this[this.tableadministrador.claveUColumn] = value;
                 }
             }
             
@@ -603,17 +603,17 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string contraseña {
+            public string contra {
                 get {
                     try {
-                        return ((string)(this[this.tableadministrador.contraseñaColumn]));
+                        return ((string)(this[this.tableadministrador.contraColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'contraseña\' de la tabla \'administrador\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'contra\' de la tabla \'administrador\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableadministrador.contraseñaColumn] = value;
+                    this[this.tableadministrador.contraColumn] = value;
                 }
             }
             
@@ -631,14 +631,14 @@ namespace AsesoriasADMIN {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IscontraseñaNull() {
-                return this.IsNull(this.tableadministrador.contraseñaColumn);
+            public bool IscontraNull() {
+                return this.IsNull(this.tableadministrador.contraColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetcontraseñaNull() {
-                this[this.tableadministrador.contraseñaColumn] = global::System.Convert.DBNull;
+            public void SetcontraNull() {
+                this[this.tableadministrador.contraColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -677,7 +677,7 @@ namespace AsesoriasADMIN {
         }
     }
 }
-namespace AsesoriasADMIN.administradoresDataSetTableAdapters {
+namespace AsesoriasADMIN.AdministradoresDataSetTableAdapters {
     
     
     /// <summary>
@@ -801,51 +801,50 @@ namespace AsesoriasADMIN.administradoresDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "administrador";
-            tableMapping.ColumnMappings.Add("cUnica", "cUnica");
+            tableMapping.ColumnMappings.Add("claveU", "claveU");
             tableMapping.ColumnMappings.Add("usuario", "usuario");
-            tableMapping.ColumnMappings.Add("contraseña", "contraseña");
+            tableMapping.ColumnMappings.Add("contra", "contra");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[administrador] WHERE (([cUnica] = @Original_cUnica) AND ((@IsN" +
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[administrador] WHERE (([claveU] = @Original_claveU) AND ((@IsN" +
                 "ull_usuario = 1 AND [usuario] IS NULL) OR ([usuario] = @Original_usuario)) AND (" +
-                "(@IsNull_contraseña = 1 AND [contraseña] IS NULL) OR ([contraseña] = @Original_c" +
-                "ontraseña)))";
+                "(@IsNull_contra = 1 AND [contra] IS NULL) OR ([contra] = @Original_contra)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cUnica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cUnica", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_claveU", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "claveU", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_usuario", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "usuario", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_usuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "usuario", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_contraseña", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contraseña", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contraseña", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contraseña", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_contra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contra", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[administrador] ([cUnica], [usuario], [contraseña]) VALUES (@cU" +
-                "nica, @usuario, @contraseña);\r\nSELECT cUnica, usuario, contraseña FROM administr" +
-                "ador WHERE (cUnica = @cUnica)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[administrador] ([claveU], [usuario], [contra]) VALUES (@claveU" +
+                ", @usuario, @contra);\r\nSELECT claveU, usuario, contra FROM administrador WHERE (" +
+                "claveU = @claveU)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cUnica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cUnica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@claveU", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "claveU", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "usuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contraseña", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contraseña", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[administrador] SET [cUnica] = @cUnica, [usuario] = @usuario, [contraseña] = @contraseña WHERE (([cUnica] = @Original_cUnica) AND ((@IsNull_usuario = 1 AND [usuario] IS NULL) OR ([usuario] = @Original_usuario)) AND ((@IsNull_contraseña = 1 AND [contraseña] IS NULL) OR ([contraseña] = @Original_contraseña)));
-SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[administrador] SET [claveU] = @claveU, [usuario] = @usuario, [contra] = @contra WHERE (([claveU] = @Original_claveU) AND ((@IsNull_usuario = 1 AND [usuario] IS NULL) OR ([usuario] = @Original_usuario)) AND ((@IsNull_contra = 1 AND [contra] IS NULL) OR ([contra] = @Original_contra)));
+SELECT claveU, usuario, contra FROM administrador WHERE (claveU = @claveU)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cUnica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cUnica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@claveU", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "claveU", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@usuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "usuario", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contraseña", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contraseña", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_cUnica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "cUnica", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contra", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_claveU", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "claveU", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_usuario", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "usuario", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_usuario", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "usuario", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_contraseña", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contraseña", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contraseña", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contraseña", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_contra", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contra", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_contra", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contra", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::AsesoriasADMIN.Properties.Settings.Default.administradoresConnectionString;
+            this._connection.ConnectionString = global::AsesoriasADMIN.Properties.Settings.Default.AdministradoresConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -854,7 +853,7 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT cUnica, usuario, contraseña FROM dbo.administrador";
+            this._commandCollection[0].CommandText = "SELECT claveU, usuario, contra FROM dbo.administrador";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -862,7 +861,7 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(administradoresDataSet.administradorDataTable dataTable) {
+        public virtual int Fill(AdministradoresDataSet.administradorDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -875,9 +874,9 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual administradoresDataSet.administradorDataTable GetData() {
+        public virtual AdministradoresDataSet.administradorDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            administradoresDataSet.administradorDataTable dataTable = new administradoresDataSet.administradorDataTable();
+            AdministradoresDataSet.administradorDataTable dataTable = new AdministradoresDataSet.administradorDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -885,14 +884,14 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(administradoresDataSet.administradorDataTable dataTable) {
+        public virtual int Update(AdministradoresDataSet.administradorDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(administradoresDataSet dataSet) {
+        public virtual int Update(AdministradoresDataSet dataSet) {
             return this.Adapter.Update(dataSet, "administrador");
         }
         
@@ -915,8 +914,8 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_cUnica, string Original_usuario, string Original_contraseña) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_cUnica));
+        public virtual int Delete(int Original_claveU, string Original_usuario, string Original_contra) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_claveU));
             if ((Original_usuario == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -925,13 +924,13 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_usuario));
             }
-            if ((Original_contraseña == null)) {
+            if ((Original_contra == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_contraseña));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_contra));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -953,19 +952,19 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int cUnica, string usuario, string contraseña) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(cUnica));
+        public virtual int Insert(int claveU, string usuario, string contra) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(claveU));
             if ((usuario == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(usuario));
             }
-            if ((contraseña == null)) {
+            if ((contra == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(contraseña));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(contra));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -987,21 +986,21 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int cUnica, string usuario, string contraseña, int Original_cUnica, string Original_usuario, string Original_contraseña) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(cUnica));
+        public virtual int Update(int claveU, string usuario, string contra, int Original_claveU, string Original_usuario, string Original_contra) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(claveU));
             if ((usuario == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(usuario));
             }
-            if ((contraseña == null)) {
+            if ((contra == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(contraseña));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(contra));
             }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_cUnica));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_claveU));
             if ((Original_usuario == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
@@ -1010,13 +1009,13 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_usuario));
             }
-            if ((Original_contraseña == null)) {
+            if ((Original_contra == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_contraseña));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_contra));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1038,8 +1037,8 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string usuario, string contraseña, int Original_cUnica, string Original_usuario, string Original_contraseña) {
-            return this.Update(Original_cUnica, usuario, contraseña, Original_cUnica, Original_usuario, Original_contraseña);
+        public virtual int Update(string usuario, string contra, int Original_claveU, string Original_usuario, string Original_contra) {
+            return this.Update(Original_claveU, usuario, contra, Original_claveU, Original_usuario, Original_contra);
         }
     }
     
@@ -1134,7 +1133,7 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(administradoresDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(AdministradoresDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._administradorTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.administrador.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1153,7 +1152,7 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(administradoresDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(AdministradoresDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._administradorTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.administrador.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1171,7 +1170,7 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(administradoresDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(AdministradoresDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._administradorTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.administrador.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1213,7 +1212,7 @@ SELECT cUnica, usuario, contraseña FROM administrador WHERE (cUnica = @cUnica)"
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(administradoresDataSet dataSet) {
+        public virtual int UpdateAll(AdministradoresDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
